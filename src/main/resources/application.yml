@@ -1,0 +1,22 @@
+#spring.application.name=japring-mysql-timezone-test
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb1?serverTimezone=Asia/Seoul&useLegacyDatetimeCode=false
+    username: root
+    password: '1234'
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+        format_sql: true
+#    hibernate:
+#      ddl-auto: create
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql: trace
