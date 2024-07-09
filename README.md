@@ -3,14 +3,18 @@
 '''docker run -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql'''
 
 ##### Run mysql with docker
-`docker run -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql`
+```
+docker run -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql
+```
 
 ##### Create database
-`docker exec -it [container] bash`
+```
+docker exec -it [container] bash
 
-`mysql -u root -p`
+mysql -u root -p
 
-`create database mydb1`
+create database mydb1
+```
 
 
 
